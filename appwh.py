@@ -13,7 +13,8 @@ if 'df_experiment_results' not in st.session_state:
 
 st.header('Lanzar una moneda')
 
-chart = st.line_chart([0.5])
+chart = st.line_chart(pd.DataFrame([[0.5]], columns=["media"]))
+# This ensures the chart is initialized with a 2D structure — one row, one column — which avoids the iteration error.
 
 
 def toss_coin(n):
