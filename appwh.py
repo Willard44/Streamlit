@@ -3,6 +3,8 @@ import scipy.stats
 import streamlit as st
 import time
 
+# If using Terminal to lounch: streamlit run app.py
+
 # estas son variables de estado que se conservan cuando Streamlit vuelve a ejecutar este script
 if 'experiment_no' not in st.session_state:
     st.session_state['experiment_no'] = 0
