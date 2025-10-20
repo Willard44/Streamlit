@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+# .\launch_app.ps1 can be used in terminal to launch the app
 
 # Título de la aplicación
 st.header('Lanzar una moneda')
@@ -32,6 +33,7 @@ if start_button:
 
     # Mostrar resultado final
     final_mean = cumulative_mean[-1]
-    st.write(f'📊 Media final después de {number_of_trials} intentos: {final_mean:.2f}')
+    st.write(
+        f'📊 Media final después de {number_of_trials} intentos: {final_mean:.2f}')
 else:
     st.write('Esta aplicación aún no es funcional. En construcción.')
